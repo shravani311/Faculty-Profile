@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1697800628821-887cc4d618de?q=80&w=698&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Navbar */
+#navbar {
+  background-image: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 0;
+}
+
+.atag {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.atag:hover {
+  background-color: white;
+  color: #0056b3;
+}
+
+.atag.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 26px;
+  color: #3949ab;
+}
+
+/* Grid */
+.material-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.material-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Cards */
+.material-card {
+  width: 100%;
+  max-width: 220px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid #ddd;
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.material-card a {
+  text-decoration: none;
+  color: #3949ab;
+  font-weight: 600;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------------- Responsive ---------------- */
+@media screen and (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #logo {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .atag {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .material-card {
+    max-width: 90%;
+    font-size: 14px;
+  }
+}

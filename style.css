@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1697800628821-887cc4d618de?q=80&w=698&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  background-image: url('https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.atag {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  padding: 15px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.atag:hover {
+  background-color: white;
+  color: #0056b3;
+}
+
+.atag.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#logo {
+  margin-right: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+}
+
+#name {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Segoe UI', serif;
+  font-weight: 700;
+  color: #3949ab;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+#designation {
+  font-size: 18px;
+  color: #444;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 10px 0;
+}
+
+#profileimg {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid #3949ab;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#profileimg:hover {
+  transform: scale(1.05);
+}
+
+#profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f6fd;
+  padding: 40px 60px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+#about {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+#details {
+  flex: 1;
+  min-width: 250px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 1000px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #e8eaf6;
+  border-radius: 10px;
+  padding: 20px 30px;
+  text-align: center;
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 16px;
+  flex: 1 1 200px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #name {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #designation {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #about {
+    font-size: 15px;
+    text-align: justify;
+    margin: 15px 0;
+  }
+
+  #profileimg {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .atag {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+}
